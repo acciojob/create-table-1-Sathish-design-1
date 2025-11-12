@@ -1,13 +1,16 @@
 function insert_Row() {
-    //Write your code here
-  const table = document.getElementById("sampleTable");
+    // Get the table element
+    const table = document.getElementById("sampleTable");
 
-	const newrow = table.insertRow(0);
+    // Insert a new row at the top of the table
+    const newrow = table.insertRow(0);
 
-	const cell1 = newrow.insertCell(0);
-	const cell2 = newrow.insertCell(2);
+    // Insert the first cell at index 0
+    const cell1 = newrow.insertCell(0);
+    // Insert the second cell at index 1
+    const cell2 = newrow.insertCell(1);
 
-	cell1.innerHTML = "New Cell1";
-	cell2.innerHTML = "New Cell2";
-  
+    // Set the inner HTML for both cells
+    cell1.innerHTML = "New Cell1";
+    cell2.innerHTML = "New Cell2";
 }
